@@ -1,19 +1,17 @@
-Enter the number of items: 
+Enter the number of items : 
 3
-Enter the price for the first item: 
+Enter the price of first item : 
 150
-Enter the quantity for the first item: 
+Enter the quantity of first item : 
 2
-Enter the price for the second item: 
+Enter the price of second item : 
 50
-Enter the quantity for the second item: 
+Enter the quantity of second item : 
 3
-Enter the price for the third item: 
+Enter the price of third item : 
 30
-Enter the quantity for the third item: 
+Enter the quantity of third item : 
 1
-Price1: 300.0
-Price2: 150.0
-Price3: 30.0
-Total: 480.0
-Price after discount is RM: 0.0
+Total price : 480.0
+The discount received : 96.0
+The price to paid : 384.0
