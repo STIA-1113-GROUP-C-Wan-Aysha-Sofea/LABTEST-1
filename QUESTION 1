@@ -8,41 +8,59 @@ public class Question1 {
 		// TODO Auto-generated method stub
 		Scanner scanMe = new Scanner (System.in);
 		
-		System.out.println("Enter the number of items: ");
-		double item1 = scanMe.nextDouble();
+		int item;
+		int p1;
+		int p2;
+		int p3;
+		int q1;
+		int q2;
+		int q3;
+		double tot;
+		double tot1;
+		double tot2;
+		double tot3;
 		
-		System.out.println("Enter the price for the first item: ");
-		double p1 = scanMe.nextDouble();
-		System.out.println("Enter the quantity for the first item: ");
-		int q1 = scanMe.nextInt();
-		System.out.println("Enter the price for the second item: ");
-		double p2 = scanMe.nextDouble();
-		System.out.println("Enter the quantity for the second item: ");
-		double q2 = scanMe.nextInt();
-		System.out.println("Enter the price for the third item: ");
-		double p3 = scanMe.nextDouble();
-		System.out.println("Enter the quantity for the third item: ");
-		double q3 = scanMe.nextInt();
+		System.out.println("Enter the number of items : ");
+		item = scanMe.nextInt();
 		
-		double tot1 = (p1 * q1);
-		System.out.println("Price1: " + tot1);
-		double tot2 = (p2 * q2);
-		System.out.println("Price2: " + tot2);
-		double tot3 = (p3 * q3);
-		System.out.println("Price3: " + tot3);
-		double tot = (tot1 + tot2 + tot3);
-		System.out.println("Total: " + tot);
-		double discount1 = 20/100*tot;
-		double discount2 = 10/100*tot;
+		System.out.println("Enter the price of first item : ");
+		p1 = scanMe.nextInt();
 		
-		if (tot >= 100) {
-			System.out.println("Price after discount is RM: " + discount1);
-			
-		}else if (tot < 100) {
-			System.out.println("Price after discount is RM: " + discount2);
+		System.out.println("Enter the quantity of first item : ");
+		q1 = scanMe.nextInt();
+		
+		System.out.println("Enter the price of second item : ");
+		p2 = scanMe.nextInt();
+		
+		System.out.println("Enter the quantity of second item : ");
+		q2 = scanMe.nextInt();
+		
+		System.out.println("Enter the price of third item : ");
+		p3 = scanMe.nextInt();
+		
+		System.out.println("Enter the quantity of third item : ");
+		q3 = scanMe.nextInt();
+		
+		tot1 = p1*q1;
+		tot2 = p2*q2;
+		tot3 = p3*q3;
+		
+		tot = tot1 + tot2 + tot3;
+		System.out.println("Total price : " + tot);
+		
+		if(tot > 100) {
+			double discreceived = (tot*20)/100;
+			double i = tot- discreceived;
+			System.out.println("The discount received : " + discreceived);
+			System.out.println("The price to paid : " + i);
+		
+		} 
+		else if(tot < 100) {
+			double discreceived = (tot*10)/100;
+			double j = tot - discreceived;
+			System.out.println("The discount received : " + discreceived);
+			System.out.println("The price to paid : " + j);
 		}
-		
 	}
 
 }
-
